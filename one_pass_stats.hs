@@ -22,14 +22,16 @@ if that data only consisted of the values up to that point
 -}
 online_stats = mvsk . foldl moments (0,0,0,0,0)
 
+safeRead inStr = case reads inStr of
+  [] -> error $ "Parse failed for: " ++ inStr
+  (parse1:_) -> fst parse1
+
 main = do
   rs <- sequence [getLine, getLine, getLine, getLine]
   print rs
-  --TODO head assumes list is not empty
-  let xread = fst . head . reads
-  print $ online_stats $ map xread rs
+  print $ online_stats $ map safeRead rs
 
   print $ online_stats [2, 30, 51, 72]
-
+  print $ Just 3
 -- prints (38.75, 894.25,-0.1685, -1.2912)
 --        (38.75,894.25,-0.16847151077905,-1.29117407893914)
