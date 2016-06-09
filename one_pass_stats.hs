@@ -25,8 +25,10 @@ online_stats = mvsk . foldl moments (0,0,0,0,0)
 main = do
   rs <- sequence [getLine, getLine, getLine, getLine]
   print rs
-  print $ online_stats $ map read rs
-  
+  --TODO head assumes list is not empty
+  let xread = fst . head . reads
+  print $ online_stats $ map xread rs
+
   print $ online_stats [2, 30, 51, 72]
 
 -- prints (38.75, 894.25,-0.1685, -1.2912)
