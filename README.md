@@ -18,7 +18,7 @@ Packages installed by stack are located deep within ~/.stack/snapshots/x86_64-li
 
 [How to install on ubuntu](https://codeforgeek.com/2014/09/install-atom-editor-ubuntu-14-04/)
 
-[Plugin ide-haskell to install](https://atom.io/packages/ide-haskell). It depends on language-haskell plugin so you must to install it as well.
+[Plugin ide-haskell to install](https://atom.io/packages/ide-haskell). It depends on language-haskell plugin so you must install it as well.
 
 Assuming you have installed at least [minimal Haskell toolchain](https://www.haskell.org/downloads) , execute the following:
 ```bash
