@@ -1,9 +1,9 @@
 #!/usr/bin/env stack
 -- stack runghc --resolver lts-8.0 --install-ghc
 
-{-# LANGUAGE RankNTypes #-}
-{-# LANGUAGE PartialTypeSignatures  #-}
-{-# LANGUAGE AllowAmbiguousTypes #-}
+{-# LANGUAGE AllowAmbiguousTypes   #-}
+{-# LANGUAGE PartialTypeSignatures #-}
+{-# LANGUAGE RankNTypes            #-}
 
 moments :: forall t.
             Floating t =>
@@ -50,7 +50,7 @@ main = do
   rs <- sequence [getLine, getLine, getLine, getLine]
   print rs
   -- DOES NOT COMPILE print $ map safeRead rs
-  print $ onlineStats $ map safeRead rs -- only first number from each sublist is used 
+  print $ onlineStats $ map safeRead rs -- only first number from each sublist is used
 
   print $ onlineStats [2, 30, 51, 72]
 -- prints (38.75, 894.25,-0.1685, -1.2912)
