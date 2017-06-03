@@ -51,3 +51,20 @@ Similar to number 2, again, no in.
     [(x, y) | x <- [1..3], let y = 2*x]
 ```    
 [(1,2),(2,4),(3,6)]
+
+### let vs where
+The {assignments} are in scope for the expressions bar and baz, but not for foo.
+```Haskell
+[ baz | foo, let {assignments ; asss2 }, bar ]
+> [ (x,v) | x <-[1..3], let {r = 1 ; g = [4..6] }, v <- g ]
+[(1,4),(1,5),(1,6),(2,4),(2,5),(2,6),(3,4),(3,5),(3,6)]
+```
+the scope of *where* lines up with a particular function definition. So
+```Haskell
+someFunc x y | guard1 = blah1
+             | guard2 = blah2
+  where {assignments}
+```  
+the {assignments} in this where clause _have access to x and y_. 
+guard1, guard2, blah1, and blah2 _all have access to the {assignments}_ of this where clause. This can be helpful if multiple guards reuse the same expressions
+
