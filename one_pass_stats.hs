@@ -1,5 +1,6 @@
 #!/usr/bin/env stack
--- stack runghc --resolver lts-8.0 --install-ghc
+-- stack script --resolver=ghc-8.2.1 
+-- stack runghc --install-ghc
 
 {-# LANGUAGE AllowAmbiguousTypes   #-}
 {-# LANGUAGE PartialTypeSignatures #-}
