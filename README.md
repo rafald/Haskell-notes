@@ -31,3 +31,40 @@ if necessary, alter PATH to include $HOME/.local/bin so stylish-haskelletc can b
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
 ```
+
+### [let in Haskell](https://stackoverflow.com/questions/8274650/in-haskell-when-do-we-use-in-with-let#8274846)
+**let expression** 
+let variable = expression in expression. This can be used wherever an expression is allowed, e.g.
+```Haskell
+   (let x = 2 in x*2) + 3
+```
+**let-statement** 
+This form is only used inside of do-notation, and does not use in.
+```Haskell
+   do statements
+     let variable = expression
+     statements
+```
+**let inside of list comprehensions** 
+Similar to number 2, again, no in.
+```Haskell
+    [(x, y) | x <- [1..3], let y = 2*x]
+```    
+[(1,2),(2,4),(3,6)]
+
+### let vs where
+The {assignments} are in scope for the expressions bar and baz, but not for foo.
+```Haskell
+[ baz | foo, let {assignments ; asss2 }, bar ]
+> [ (x,v) | x <-[1..3], let {r = 1 ; g = [4..6] }, v <- g ]
+[(1,4),(1,5),(1,6),(2,4),(2,5),(2,6),(3,4),(3,5),(3,6)]
+```
+the scope of *where* lines up with a particular function definition. So
+```Haskell
+someFunc x y | guard1 = blah1
+             | guard2 = blah2
+  where {assignments}
+```  
+the {assignments} in this where clause _have access to x and y_. 
+guard1, guard2, blah1, and blah2 _all have access to the {assignments}_ of this where clause. This can be helpful if multiple guards reuse the same expressions
+
