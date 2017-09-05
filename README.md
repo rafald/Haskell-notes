@@ -2,6 +2,9 @@
 
 ## How-tos
 
+### Introduce dependencies
+new stack template based projects use package.yaml to specify dependencies ; <project>.cabal file is derived from package.yaml so external dependencies should be specified in package.yaml, not in <project>.cabal or stack.yaml
+
 ### [Remove/Uninstall a package that stack installed](http://stackoverflow.com/questions/38636436/how-to-uninstall-a-haskell-package-installed-with-stack#38639959)
 This is manual task - no support from [stack](https://docs.haskellstack.org/en/stable/README/) tool. This entails using ghc-pkg unregister and then finding the location of the package on your system and removing it via another tool or simply rm.
 
