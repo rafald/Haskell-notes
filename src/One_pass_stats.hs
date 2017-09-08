@@ -5,6 +5,7 @@
 {-# LANGUAGE AllowAmbiguousTypes   #-}
 {-# LANGUAGE PartialTypeSignatures #-}
 {-# LANGUAGE RankNTypes            #-}
+module One_pass_stats where
 
 moments :: forall t.
             Floating t =>

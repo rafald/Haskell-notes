@@ -1,0 +1,60 @@
+name:    hasksandbox
+version: "0.0.0"
+
+dependencies:
+- filepath
+- cryptonite
+- conduit-extra
+- cryptonite-conduit
+- containers
+- network
+- conduit-combinators
+- criterion
+- comonad
+- http-conduit
+- aeson
+- singletons
+- base
+- blaze-builder
+- text
+- yesod
+- http-types
+- mtl
+- happstack-server
+- free
+- transformers
+- profunctors
+- turtle
+- lifted-async
+- stm
+- say
+- bytestring
+- resourcet
+- text-conversions
+- fdo-notify
+- dbus
+- ad
+- simple-reflect
+- enumerator
+#- ghc
+#- network
+#- yesod-core
+#- composition
+#- haxl
+
+# The library contains all of our application code. The executable
+# defined below is just a thin wrapper.
+library:
+  source-dirs: src
+
+# Runnable executable for our application
+executables:
+  hasksandbox:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hasksandbox

@@ -1,0 +1,156 @@
+-- This file has been generated from package.yaml by hpack version 0.18.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:                hasksandbox
+version:             0.0.0
+license-file:        LICENSE
+build-type:          Simple
+cabal-version:       >= 1.10
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      filepath
+    , cryptonite
+    , conduit-extra
+    , cryptonite-conduit
+    , containers
+    , network
+    , conduit-combinators
+    , criterion
+    , comonad
+    , http-conduit
+    , aeson
+    , singletons
+    , base
+    , blaze-builder
+    , text
+    , yesod
+    , http-types
+    , mtl
+    , happstack-server
+    , free
+    , transformers
+    , profunctors
+    , turtle
+    , lifted-async
+    , stm
+    , say
+    , bytestring
+    , resourcet
+    , text-conversions
+    , fdo-notify
+    , dbus
+    , ad
+    , simple-reflect
+    , enumerator
+  exposed-modules:
+      Aplicatives_being_monoidal_functors
+      AvgRadiusEarth
+      Better_exceptions
+      Better_exceptions_8
+      Brainfuck
+      Compiled_stack_script
+      ConduitTest
+      ConduitTest2
+      Cont
+      ContT
+      ContVoidAbsurd
+      CoYoneda
+      Exists
+      Fibber_Perf_Measurement
+      FindTriangles
+      Forall
+      Free_monads_gistfile
+      Gadt
+      Game_life_comonad
+      HPTTConduit
+      Http
+      Httpbin
+      InstaPermaDeathHack
+      LoopState
+      Mechanics
+      Mod
+      Newton
+      NotAApp
+      Notify_send
+      One_pass_stats
+      Rand_concurrent
+      Read_file
+      Read_file_con
+      Read_file_continu_BUG
+      Read_file_efficent
+      Reader_Hspec_discover
+      Repl
+      ResIO
+      ResourceT_test
+      RULE
+      SafeHead
+      SomeNat
+      Stack_script
+      State_mondad_with_IO
+      StatefullStack
+      StateGame
+      StephenDiehl
+      TreeState
+      Turtle_example
+      Turtle_script
+      TVar
+      TVarIO
+      Type_wildcard
+      TypeOperators
+      UI_Sketch
+      WebApp
+      WithFile
+      WriterX
+      Yesod_cleanPath
+  other-modules:
+      Paths_hasksandbox
+  default-language: Haskell2010
+
+executable hasksandbox
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      filepath
+    , cryptonite
+    , conduit-extra
+    , cryptonite-conduit
+    , containers
+    , network
+    , conduit-combinators
+    , criterion
+    , comonad
+    , http-conduit
+    , aeson
+    , singletons
+    , base
+    , blaze-builder
+    , text
+    , yesod
+    , http-types
+    , mtl
+    , happstack-server
+    , free
+    , transformers
+    , profunctors
+    , turtle
+    , lifted-async
+    , stm
+    , say
+    , bytestring
+    , resourcet
+    , text-conversions
+    , fdo-notify
+    , dbus
+    , ad
+    , simple-reflect
+    , enumerator
+    , hasksandbox
+  other-modules:
+      Setup
+  default-language: Haskell2010

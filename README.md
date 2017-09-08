@@ -81,3 +81,11 @@ someFunc x y | guard1 = blah1
 the {assignments} in this where clause _have access to x and y_. 
 guard1, guard2, blah1, and blah2 _all have access to the {assignments}_ of this where clause. This can be helpful if multiple guards reuse the same expressions
 
+---
+to suck in hs files to a new project:
+
+1) prepare packages.yaml - specify src dir
+2) run: stack init --solver --force
+
+! only files starting with UPPERCASE will be incorporated
+
