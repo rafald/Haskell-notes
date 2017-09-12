@@ -1,7 +1,7 @@
 #!/usr/bin/env stack
 -- stack script --resolver=ghc-8.2.1
 -- stack --resolver=ghc-8.2.1 --install-ghc runghc -- -Wall -ddump-splices
--- stack --resolver=lts-9.1 --install-ghc runghc -- -Wall -ddump-splices
+-- stack --resolver=lts-9.4 --install-ghc runghc -- -Wall -ddump-splices
 -- -Werror
 
 {-# LANGUAGE TypeFamilies, OverloadedStrings #-}

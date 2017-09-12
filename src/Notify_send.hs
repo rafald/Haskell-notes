@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 -- stack --verbosity info --install-ghc script --resolver=ghc-8.2.1
--- --resolver lts-9.1
+-- --resolver lts-9.4
 --resolver=nightly-2017-08-19
 
 module Notify_send where

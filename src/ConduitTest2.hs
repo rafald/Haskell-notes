@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-9.3 --package conduit-combinators --package conduit-extra --package text --package filepath --package cryptonite --package cryptonite-conduit --package http-conduit --package bytestring
+-- stack script --resolver lts-9.4 --package conduit-combinators --package conduit-extra --package text --package filepath --package cryptonite --package cryptonite-conduit --package http-conduit --package bytestring
 {-# LANGUAGE ExtendedDefaultRules #-}
 {-# LANGUAGE PackageImports ,StandaloneDeriving #-}
 {-# LANGUAGE OverloadedStrings #-} -- for httpSink <Request>

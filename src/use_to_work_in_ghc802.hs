@@ -1,7 +1,7 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-9.1
+-- stack script --resolver=lts-9.4
 -- stack script --resolver=ghc-8.2.1
--- stack script --resolver=lts-9.1 --compiler=ghc-8.2.1
+-- stack script --resolver=lts-9.4 --compiler=ghc-8.2.1
 
 {-# LANGUAGE RankNTypes #-}
 module Use_to_work_in_ghc802 where

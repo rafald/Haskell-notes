@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-9.1 
+-- stack script --resolver=lts-9.4
 -- --package turtle
 -- stack script --resolver=ghc-8.2.1 --package turtle
 -- stack --verbosity info runghc --install-ghc --package turtle

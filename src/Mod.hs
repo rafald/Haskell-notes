@@ -1,7 +1,6 @@
 #!/usr/bin/env stack
--- stack exec runghc --resolver=lts-9.1 --package singletons
+-- stack exec runghc --resolver=lts-9.4 --package singletons
 -- stack script --resolver=ghc-8.2.1
--- --resolver=lts-9.0
 
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE ScopedTypeVariables #-}

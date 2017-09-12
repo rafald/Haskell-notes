@@ -1,7 +1,6 @@
 #!/usr/bin/env stack
 -- stack runghc --resolver=ghc-8.2.1 --package free --package bifunctors --package comonad --package distributive --package exceptions --package mtl --package prelude-extras --package profunctors --package semigroupoids --package semigroups --package transformers-compat --package base-orphans --package cabal-doctest --package contravariant --package hashable --package stm --package tagged --package unordered-containers --package StateVar --package text --package void
 -- stack --verbosity info --install-ghc script --resolver=ghc-8.2.1
--- --resolver lts-9.1
 --{-# LANGUAGE GADTs #-}
 
 -- https://gist.github.com/avieth/334201aa341d9a00c7fc

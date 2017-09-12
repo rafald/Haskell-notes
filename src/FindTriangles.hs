@@ -1,3 +1,6 @@
+#!/usr/bin/env stack
+-- stack exec runghc --resolver=lts-9.4
+
 -- https://gist.github.com/qzchenwl/57ec6f993bba6566dacd/raw/c5295855cc8e68c5b49afdf013810cb4db1e346d/FindTriangles.hs
 
 module FindTriangles where

@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-9.1
+-- stack script --resolver=lts-9.4
 -- stack script --resolver=ghc-8.2.1 --package=comonad
 
 -- https://github.com/BartoszMilewski/GameOfLife/blob/master/Life.hs

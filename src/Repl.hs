@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-9.3
+-- stack script --resolver lts-9.4
 --nightly-2017-08-20
 module Repl where
 

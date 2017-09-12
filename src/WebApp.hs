@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-9.1 --package happstack
+-- stack script --resolver=lts-9.4 --package happstack
 -- --compiler ghc-8.2.1
 -- stack runghc --install-ghc
 module WebApp where

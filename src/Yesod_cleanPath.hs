@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 -- stack --verbosity info exec ghc --package yesod 
--- stack script --resolver=lts-9.1 --package yesod --package blaze-builder --package text --package http-types -- -v
+-- stack script --resolver=lts-9.4 --package yesod --package blaze-builder --package text --package http-types -- -v
 
 -- stack script --resolver=ghc-8.2.1 --package yesod
 -- stack --verbosity info exec ghc --install-ghc --resolver nightly-2017-08-17

@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 -- stack --verbosity info script --install-ghc --resolver=ghc-8.2.1
--- --resolver=lts-9.1
+-- --resolver=lts-9.4
 -- --resolver nightly-2017-07-11
 
 module Reader_Hspec_discover where -- NOT must be before following {-# OPTIONS_GHC ...

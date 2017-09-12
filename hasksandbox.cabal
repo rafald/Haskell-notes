@@ -12,7 +12,8 @@ library
   hs-source-dirs:
       src
   build-depends:
-      filepath
+      deepseq
+    , filepath
     , cryptonite
     , conduit-extra
     , cryptonite-conduit
@@ -47,11 +48,12 @@ library
     , simple-reflect
     , enumerator
   exposed-modules:
-      Aplicatives_being_monoidal_functors
+      AplicativesBeingMonoidalFunctors
       AvgRadiusEarth
       Better_exceptions
       Better_exceptions_8
       Brainfuck
+      ChainReaction
       Compiled_stack_script
       ConduitTest
       ConduitTest2
@@ -72,6 +74,8 @@ library
       InstaPermaDeathHack
       LoopState
       Mechanics
+      MemUsage
+      MemUsage2
       Mod
       Newton
       NotAApp
@@ -94,6 +98,10 @@ library
       StatefullStack
       StateGame
       StephenDiehl
+      Streaming
+      Trace
+      Trace2
+      Trace3
       TreeState
       Turtle_example
       Turtle_script
@@ -116,7 +124,8 @@ executable hasksandbox
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      filepath
+      deepseq
+    , filepath
     , cryptonite
     , conduit-extra
     , cryptonite-conduit
