@@ -37,6 +37,7 @@ dependencies:
 - ad
 - simple-reflect
 - enumerator
+- conduit
 #- ghc
 #- network
 #- yesod-core

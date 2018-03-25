@@ -115,7 +115,7 @@ main = do
     runConduit
       $ yield message
      .| encodeUtf8C
-     .| encodeBase64C
+     --Not present in 11.1  .| encodeBase64C
      .| stdoutC
     --
     runConduit $ yieldMany [1..10] .| trans .| mapM_C print
