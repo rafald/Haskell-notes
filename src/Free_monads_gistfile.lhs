@@ -161,7 +161,7 @@ Now we can tell GHC of our composite monad, `LogPlus`, and write terms in it.
 > logPlusTerm i = do
 >     injectF $ log ("Input is " ++ (show i))
 >     sum <- injectF $ plus i 42
->     injectF $ log ("Sum computed successfully!")
+>     injectF $ log ("Sum computed successfully!":: String)
 >     return sum
 
 But what use is this, when we have no way to interpret a `LogPlus`?

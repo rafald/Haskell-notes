@@ -6,8 +6,9 @@
 module FindTriangles where
 import Data.List
 
-vertices = "ABCDEFGHIJK"
-edges = ["ADB", "AEC", "AFHJ", "AGIK", "BJKC", "BHIE", "DFGE"]
+
+vertices = ("ABCDEFGHIJK" :: String)
+edges = ["ADB", "AEC", "AFHJ", "AGIK", "BJKC", "BHIE", "DFGE"] :: [String]
 combinations n = filter ((==n) . length) . subsequences
 inSameEdge xs = or [ all (`elem` edge) xs | edge <- edges]
 isTriangle (a:b:c:[]) = all inSameEdge [[a, b], [a, c], [b, c]] && not (inSameEdge [a, b, c])

@@ -1,0 +1,3 @@
+ Building with profiling via stack:
+    > stack install --enable-executable-profiling --enable-library-profiling --ghc-options="-rtsopts -fprof-auto -fprof-cafs"
+

@@ -83,7 +83,7 @@ bfWhile cs = do
 -- parsing stuff
 
 parseString :: String -> Brainfuck ()
-parseString = parse . filter (`elem` "><+-.,[]")
+parseString = parse . filter (`elem` ("><+-.,[]":: String) )
 
 parse :: String -> Brainfuck ()
 parse [] = return ()
