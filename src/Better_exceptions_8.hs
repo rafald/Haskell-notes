@@ -1,5 +1,6 @@
 #!/usr/bin/env stack
--- stack script --resolver=ghc-8.2.1
+-- stack script --resolver=lts-12.02
+-- stack script --resolver=ghc-8.4.3
 -- stack --install-ghc runghc --package network -- -Wall -Werror
 
 module Better_exceptions_8 where

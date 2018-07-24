@@ -79,7 +79,7 @@ dependencies:
 - dbus
 - ad
 - simple-reflect
-- enumerator
+#- enumerator
 - conduit
 #- ghc
 #- network
