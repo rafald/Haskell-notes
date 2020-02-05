@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    component: "hasksandbox:exe:hasksandbox" #"app/Main.hs"
+  direct: { arguments: [--main-is, "hasksandbox:exe:hasksandbox"]} 

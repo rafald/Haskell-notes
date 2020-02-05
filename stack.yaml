@@ -8,15 +8,10 @@
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
 #
-# resolver: lts-3.5
-# resolver: nightly-2015-09-21
-# resolver: ghc-7.10.2
-# resolver: ghcjs-0.1.0_ghc-7.10.2
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-12.2
-#resolver: lts-11.18 # 8.2.2
+resolver: lts-14.22
 allow-newer: true
 
 # User packages to be built.
@@ -45,7 +40,7 @@ packages:
 extra-deps: 
 #- enumerator-0.4.20
 - fdo-notify-0.3.1
-- happstack-server-7.5.1
+- happstack-server-7.6.0
 - sendfile-0.7.9
 - https://hackage.haskell.org/package/ghc-mod-5.9.0.0/candidate/ghc-mod-5.9.0.0.tar.gz
 - cabal-helper-0.8.0.2
