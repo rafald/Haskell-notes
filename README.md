@@ -1,9 +1,4 @@
-# hasksandbox
-# haskell_sandbox
-
-## How-tos
-
-### Introduce dependencies
+### How to introduce new dependencies
 new stack template based projects use package.yaml to specify dependencies ; <project>.cabal file is derived from package.yaml so external dependencies should be specified in package.yaml, not in <project>.cabal or stack.yaml
 If packahge is not present add for instance
 `  build-depends:
